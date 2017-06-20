@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#"> <!--OPEN GRAPH PROTOCOL-->
+	
+    <!--ASSETS-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>       
+    <!--/ASSETS-->
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+ 	<link rel="stylesheet" href="styles/styles.min.css"> 
+</head>
+<body>
+	
+	<div class="p-30 m-b60" style="background-color: #f0f0f0">
+		<small class="dkit-section-note m-b5">Created with <span class="icon-uni55 c-main"></span> & Sudo ~ Devkit 2.1</small>
+		<h2 class="dkit-section-title lg">Ellipse cheat-sheet</h2>
+		<a href="https://github.com/sudomaxime/buddha-v2" class="dkit-section-link">https://github.com/sudomaxime/ellipse.git</a>
+		<hr class="dkit-section-hr">
+		<small class="dkit-section-note m-t5 m-b5">(node version 6.6.2)</small>
+		<small class="dkit-section-note m-t5 m-b5">> git clone https://github.com/sudomaxime/ellipse.git</small>
+		<small class="dkit-section-note m-t5 m-b5">> npm install</small>
+		<small class="dkit-section-note m-t5">> gulp devkit</small>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t20" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Project icons</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12" dkit-grid="col-12">
+		<span class="icon_paper-plane-1"></span>
+		<span class="icon_plus-circle-f"></span>
+		<span class="icon_plus-circle"></span>
+		<span class="icon_tools"></span>
+		<span class="icon_msg-user"></span>
+		<span class="icon_msg-advice"></span>
+		<span class="icon_laptop"></span>
+		<span class="icon_piggy"></span>
+		<span class="icon_graduated"></span>
+		<span class="icon_teachers"></span>
+		<span class="icon-uni2F"></span>
+		
+	</div>
+	
+	<div class="p-l20 p-r20 m-t20" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Button colors</h2>
+		<hr class="dkit-section-hr">
+	</div>
+		
+	<div class="p-20" dkit-grid="col-12" dkit-grid="col-12">
+		<a class="btn c-main sm" href="#">Some button</a>
+		<a class="btn c-main_ol sm" href="#">Some button</a>
+		<a class="btn c-warn sm" href="#">Some button</a>
+		<a class="btn c-warn_ol sm" href="#">Some button</a>
+		<a class="btn c-alert sm" href="#">Some button</a>
+		<a class="btn c-alert_ol sm" href="#">Some button</a>
+		<a class="btn c-done sm" href="#">Some button</a>
+		<a class="btn c-done_ol sm" href="#">Some button</a>
+		<a class="btn c-gray sm" href="#">Some button</a>
+		<a class="btn c-gray_ol sm" href="#">Some button</a>
+	</div>
+
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Link states</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<a class="link sm c-main" href="#">Some link</a><br>
+		<a class="link sm c-warn" href="#">Some link</a><br>
+		<a class="link sm c-alert" href="#">Some link</a><br>
+		<a class="link sm c-done" href="#">Some link</a>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Link sizes</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<a class="link xlg">Exemple de lien</a><br>
+		<a class="link lg">Exemple de lien</a><br>
+		<a class="link med">Exemple de lien</a><br>
+		<a class="link sm">Exemple de lien</a><br>
+		<a class="link xsm">Exemple de lien</a><br>
+		<a class="link xxsm">Exemple de lien</a><br>
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Link buttons</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<a class="link sm up h-btn ls">Add more of something <span class="icon_plus-circle va-b01"></span></a><br>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Button sizes</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<a class="btn xlg" href="#">Some button</a>
+		<a class="btn lg" href="#">Some button</a>
+		<a class="btn med" href="#">Some button</a>
+		<a class="btn" href="#">Some button</a><br><br>
+		<a class="btn sm" href="#">Some button</a>
+		<a class="btn xsm" href="#">Some button</a>
+		<a class="btn xxsm" href="#">Some button</a>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Button styles</h2>
+		<small class="dkit-section-note">(with extra padding on sides option)</small>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<a class="btn xlg-extra up ls" href="#">Some button</a>
+		<a class="btn lg-extra up ls" href="#">Some button</a>
+		<a class="btn med-extra up ls" href="#">Some button</a>
+		<a class="btn up ls" href="#">Some button</a><br><br>
+		<a class="btn sm-extra up ls" href="#">Some button</a>
+		<a class="btn xsm-extra up ls" href="#">Some button</a>
+		<a class="btn xxsm-extra up ls" href="#">Some button</a>
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<a class="btn sm up" href="#">Some button</a>
+		<a class="btn sm up fat" href="#">Some button</a>
+		<a class="btn sm up thin" href="#">Some button</a>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Dropdown styles</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20 m-b20" dkit-grid="col-12">
+		<div class="dropdown">
+			<a class="link drop sm" dkit-dropdown>Some left dropdown <span class="icon-arrow-down"></span></a>
+			<ul class="dropdown-list" style="min-width:300px">
+				<li><a class="link sm">List dropdown example link</a></li>
+				<li><a class="link sm">List dropdown example wow link</a></li>
+				<li><a class="link sm">List dropdown amazing sample</a></li>
+			</ul>
+		</div>
+		<div class="dropdown m-l20">
+			<a class="link drop sm" dkit-dropdown>Some right dropdown <span class="icon-arrow-down"></span></a>
+			<ul class="dropdown-list right" style="min-width:300px">
+				<li><a class="link sm">List dropdown example link</a></li>
+				<li><a class="link sm">List dropdown example wow link</a></li>
+				<li><a class="link sm">List dropdown amazing sample</a></li>
+			</ul>
+		</div>
+		<div class="dropdown m-l20">
+			<a class="link drop sm" dkit-dropdown="self">Dropdown with self setting <span class="icon-arrow-down"></span></a>
+			<ul class="dropdown-list" style="min-width:300px">
+				<li><a class="link sm">List dropdown example link</a></li>
+				<li><a class="link sm">List dropdown example wow link</a></li>
+				<li><a class="link sm">List dropdown amazing sample</a></li>
+			</ul>
+		</div>
+		<div class="dropdown m-l20">
+			<a class="link drop sm" dkit-dropdown>Some cropped dropdown scroll <span class="icon-arrow-down"></span></a>
+			<ul class="dropdown-list crop" style="min-width:300px">
+				<li><a class="link sm">List dropdown example link</a></li>
+				<li><a class="link sm">List dropdown example wow link</a></li>
+				<li><a class="link sm">List dropdown amazing sample</a></li>
+				<li><a class="link sm">List dropdown example link</a></li>
+				<li><a class="link sm">List dropdown example wow link</a></li>
+				<li><a class="link sm">List dropdown amazing sample</a></li>
+				<li><a class="link sm">List dropdown example link</a></li>
+				<li><a class="link sm">List dropdown example wow link</a></li>
+				<li><a class="link sm">List dropdown amazing sample</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Button shapes</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<a class="btn square"><span class="icon-arrow-right"></span></a>
+		<a class="btn round"><span class="icon-arrow-right"></span></a>
+		<a class="btn square perfect-32"><span class="icon-arrow-right"></span></a>
+		<a class="btn square perfect-42"><span class="icon-arrow-right"></span></a>
+		<a class="btn square perfect-48"><span class="icon-arrow-right"></span></a>
+		<a class="btn round perfect-32"><span class="icon-arrow-right"></span></a>
+		<a class="btn round perfect-42"><span class="icon-arrow-right"></span></a>
+		<a class="btn round perfect-48"><span class="icon-arrow-right"></span></a>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Button states</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<a class="btn sm disabled">Some button</a>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Pagination buttons</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<ul class="btn-group">
+			<li><a class="btn ol sm"><span class="icon-arrow-left"></span></a></li><li><a class="btn ol sm active" href="#">1</a></li><li><a class="btn ol sm" href="#">2</a></li><li><a class="btn ol sm" href="#">3</a></li><li><a class="btn ol sm" href="#">...</a></li><li><a class="btn ol sm" href="#">8</a></li><li><a class="btn ol sm" href="#"><span class="icon-arrow-right"></span></a></li>
+		</ul>
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<a class="btn round perfect-32"><span class="icon-arrow-left"></span></a>
+		<a class="btn round ol perfect-32">1</a>
+		<a class="btn round ol perfect-32">2</a>
+		<a class="btn round ol perfect-32">3</a>
+		<a class="btn round ol perfect-32">...</a>
+		<a class="btn round perfect-32"><span class="icon-arrow-right"></span></a>
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<ul class="btn-group tabs">
+			<li><a class="btn ol sm" href="#">1</a></li><li><a class="btn ol sm tab-active" href="#">2</a></li><li><a class="btn ol sm" href="#">3</a></li><li><a class="btn ol sm" href="#">4</a></li><li><a class="btn ol sm" href="#">5</a></li><li><a class="btn ol sm" href="#">6</a></li>
+		</ul>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Titles</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<span class="title">Exemple de titre normal</span><br>
+		<span class="title med">Exemple de titre medium</span><br>
+		<span class="title sm">Exemple de titre medium</span><br>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Sub-titles</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<span class="sub-title">Exemple de titre normal</span><br>
+		<span class="sub-title med">Exemple de titre medium</span><br>
+		<span class="sub-title sm">Exemple de titre medium</span><br>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Labels</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<span class="label">Exemple de titre normal</span><br>
+		<span class="label med">Exemple de titre medium</span><br>
+		<span class="label sm">Exemple de titre medium</span><br>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Text styles</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores officiis ipsa excepturi minima quaerat nostrum debitis modi. Doloremque possimus mollitia at, esse, saepe accusantium quos, quia aliquid tenetur repudiandae dolor!</span><br><br>
+		<span class="text med">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores officiis ipsa excepturi minima quaerat nostrum debitis modi. Doloremque possimus mollitia at, esse, saepe accusantium quos, quia aliquid tenetur repudiandae dolor!</span><br><br>
+		<span class="text sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores officiis ipsa excepturi minima quaerat nostrum debitis modi. Doloremque possimus mollitia at, esse, saepe accusantium quos, quia aliquid tenetur repudiandae dolor!</span><br><br>
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Text states</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 m-t20" dkit-grid="col-12">
+		<span class="text m-b20">Some bit of text <a href="#">with a link</a></span><br>
+		<span class="text m-b20">Some bit of text <strong>with strong tags</strong></span><br>
+		<span class="text m-b20">Some bit of text <em>with em tags</em></span><br>
+		<span class="text m-b20">Some bit of text <mark>with mark tags</mark></span><br>
+		<span class="text m-b20">Some bit of text <u>with u tags</u></span><br>
+		<span class="text m-b20">Some bit of text <span class="c-warn">with warning !</span></span><br>
+		<span class="text m-b20">Some bit of text <span class="c-warn fat">with fat warning !</span></span><br>
+		<span class="text m-b20">Some bit of text <span class="c-warn fat up">with fat uppercase warning !</span></span><br>
+		<span class="text m-b20">Some bit of text <span class="c-alert">with alert !</span></span><br>
+		<span class="text m-b20">Some bit of text <span class="c-alert fat">with fat alert !</span></span><br>
+		<span class="text m-b20">Some bit of text <span class="c-alert fat up">with fat uppercase alert !</span></span><br>
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Tags styles</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<span class="tag c-main"><span class="icon-uni53"></span> Such tags wow</span>
+		<span class="tag c-main_ol"><span class="icon-uni53"></span> Such tags wow</span>
+		<span class="tag t-main"><span class="icon-uni53"></span> Step 1 of 3</span>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Form styles</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	
+	<div class="p-20" dkit-grid="col-12">
+		<form class="form">
+ 		
+	 		<label>Some input label</label>
+			<input type="text" placeholder="Some form of placeholder">
+			
+			<br>
+			<br>
+			<br>
+			
+			<label>Some input label:</label><span class="m-l5 di text sm">Some sub label</span>
+			<input type="text" placeholder="Some form of placeholder">
+			<small>Some notice about the field</small>
+			
+			<br>
+			<br>
+			
+			<label>Some input with warn state</label>
+			<input class="warn" type="text" placeholder="Some form of placeholder">
+			
+			<br>
+			<br>
+			<br>
+			
+			<label>Some input with alert state</label>
+			<input class="alert" type="text" placeholder="Some form of placeholder">
+			
+			<br>
+			<br>
+			<br>
+			
+			<label>Some input label</label><span class="di m-l5 di text c-warn">*</span>
+			<input type="text" placeholder="Some form of placeholder">
+			<span class="text sm m-t5"><span class="fat c-warn">* Fat warning:</span> some warning notice</span>
+			
+			<br>
+			<br>
+			
+			<label>Some input label:</label>
+			<textarea placeholder="Say something nice"></textarea>
+			
+			<br>
+			<br>
+			
+			<label>Regular number</label>
+			<input type="number" placeholder="0">
+			
+			<br>
+			<br>
+			
+			<div>
+				<label>Some select label</label>
+				<div class="fix-select">
+					<div class="btn-dropdown">
+						<span class="icon-uniE008"></span>
+					</div>
+					<select>
+						<option selected disabled>Select option</option>
+						<option>This nice option</option>
+						<option>This interesting choice</option>
+						<option>This valuable selection</option>
+						<option>This very bad alternative</option>
+					</select>
+				</div>
+			</div>
+			
+			<br>
+			<br>
+			
+			<div class="fix-checkbox">
+				<label>Parent label</label><br>
+				<label><input type="checkbox">Add this interesting choice that is very long and will fall on two lines if given a chance</label><br>
+				<label><input type="checkbox">Remove this bad option</label><br>
+				<label><input type="checkbox">Sprinkle this selection</label>
+				<small class="match-checkbox">Sprinkling this selection will make it delicious !</small>
+			</div>
+			
+			<br>
+			<br>
+			
+			<div class="fix-checkbox">
+				<label>Parent label</label><br>
+				<label><input type="radio" name="dkit" checked>I rather have this</label><br>
+				<label><input type="radio" name="dkit">I prefer that</label>
+			</div>
+
+		</form>
+
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Custom form inputs</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<form class="form">
+			
+			<label>Custom number</label>
+			<div class="fix-numbox" style="max-width:150px;">
+				<a class="fix-numbox-minus left"><span class="icon-uni5F"></span></a>
+				<input type="number" min="0" placeholder="1" max="99">
+				<a class="fix-numbox-plus right"><span class="icon-uni60"></span></a>
+			</div>
+			
+			<br>
+			<br>
+			
+			<label>Custom box select</label>
+			<div class="fix-boxselect selected" style="max-width: 300px;">
+				<p class="sub-title sm">Some pre-selected choice</p>
+				<p class="text sm m-t5">Try not to confuse the user, have one box pre-selected on load for better UX</p>
+				<!-- Dynamically uncheck the box if clicked again -->
+				<input class="dn" type="checkbox" value="example" checked>
+			</div>
+			
+			<br>
+		
+			<div class="fix-boxselect" style="max-width: 300px;">
+				<p class="sub-title sm">Some not selected choice</p>
+				<p class="text sm m-t5">These boxes have an hidden checkbox that needs to be checked dynamically</p>
+				<!-- Dynamically check the box if clicked -->
+				<input class="dn" type="checkbox" value="example2" checked>
+			</div>
+			
+			<br>
+			<br>
+			
+			<div class="fix-iconinput right">
+				<span class="icon-uniE022"></span>
+				<input type="text" placeholder="Email">
+			</div>
+			
+			<br>
+			
+			<div class="fix-iconinput right">
+				<span class="icon-mail"></span>
+				<input type="password" placeholder="Password">
+			</div>
+
+			<div class="fix-groupselect m-t20" dkit-grid="col-12">
+				
+				<div class="fix-groupselect-node active" dkit-grid="col-12">
+					<span class="pointer"></span>
+					<span class="sub-title sm">À la carte</span>
+					<span class="text">185$ /</span><span class="va-t01 text sm"> séance</span>
+					<input type="checkbox" class="dn" name="groupselect" value="1">
+				</div>
+				<div class="fix-groupselect-node" dkit-grid="col-12">
+					<span class="pointer"></span>
+					<span class="sub-title sm">À la carte</span>
+					<span class="text">185$ /</span><span class="va-t01 text sm"> séance</span>
+					<input type="checkbox" class="dn" name="groupselect" value="1">
+				</div>
+				<div class="fix-groupselect-node" dkit-grid="col-12">
+					<span class="pointer"></span>
+					<span class="sub-title sm">À la carte</span>
+					<span class="text">185$ /</span><span class="va-t01 text sm"> séance</span>
+					<input type="checkbox" class="dn" name="groupselect" value="1">
+				</div>
+				<div class="fix-groupselect-node" dkit-grid="col-12">
+					<span class="pointer"></span>
+					<span class="sub-title sm">À la carte</span>
+					<span class="text">185$ /</span><span class="va-t01 text sm"> séance</span>
+					<input type="checkbox" class="dn" name="groupselect" value="1">
+				</div>
+			</div>
+		
+		</form>
+
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Client blocks</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<div class="client" dkit-grid="col-12" style="max-width:500px;">
+			<div class="client-profile">
+				<img src="http://lorempixel.com/80/80/">
+			</div>
+			<div class="client-testimony" dkit-grid="col-12">
+				<h3 class="label">Stéphanie Dion, M.B.A, C.M.A</h3>
+				<h4 class="text xsm up">CEO plancher incroyables inc.</h4>
+				<p class="text med m-t20">« Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid molestiae dicta inventore ab, dolores, possimus asperiores. Quia veniam molestias, tempora. »</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Teacher blocks</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<div class="teacher" dkit-grid="col-12" style="background-image:url('http://lorempixel.com/400/800/'); max-width:300px;">
+			<div class="teacher-gradient" dkit-grid="col-12"></div>
+			<div class="teacher-description" dkit-grid="col-12">
+				<p class="tag c-main m-b10"><span class="icon-uni30 va-t01"></span> Disponible</p>
+				<h3 class="sub-title sm c-white">Teacher name</h3>
+				<h4 class="text sm c-white"><strong class="up">Intérêts:</strong> culture, voyage, musique</h4>
+			</div>
+		</div>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Plan blocks</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20 bg-dark" dkit-grid="col-12">
+		<div class="plan" dkit-grid="col-12" style="max-width: 380px;">
+			<div class="plan-body" dkit-grid="col-12">
+				<h3 class="sub-title med c-white">À la carte</h3>
+				<h3 class="title thin lg c-white">85$</h3>
+				<p class="text sm c-gray">/mois</p>
+				<p class="text med m-t20 c-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quo harum obcaecati, delectus beatae molestiae inventore quaerat placeat officia impedit odit, deserunt praesentium doloribus veniam aperiam, velit voluptates fuga perferendis.</p>
+			</div>
+			<div class="plan-foot m-t40" dkit-grid="col-12">
+				<a class="btn c-gray_d sm extra up ls">Choisir ce plan</a>
+			</div>
+		</div>
+		
+		<div class="plan m-l20 imp" dkit-grid="col-12" style="max-width: 380px;">
+			<div class="plan-tag" dkit-grid="col-12">
+				<p class="tag c-main"><span class="icon-uni53"></span> populaire</p>
+			</div>
+			<div class="plan-body" dkit-grid="col-12">
+				<h3 class="sub-title med c-white">Individu</h3>
+				<h3 class="title thin lg c-main">185$</h3>
+				<p class="text sm c-gray">/mois</p>
+				<p class="text med m-t20 c-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quo harum obcaecati, delectus beatae molestiae inventore quaerat placeat officia impedit odit, deserunt praesentium doloribus veniam aperiam, velit voluptates fuga perferendis.</p>
+			</div>
+			<div class="plan-foot m-t40" dkit-grid="col-12">
+				<a class="btn c-gray_d sm extra up ls">Choisir ce plan</a>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Feature blocks</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<div class="feature" dkit-grid="col-12" style="max-width: 380px;">
+			<div class="feature-icon">
+				<span class="icon_laptop"></span>
+			</div>
+			<div class="feature-description" dkit-grid="col-12">
+				<h3 class="label lg">Rendez-vous en ligne</h3>
+				<p class="text m-t10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt assumenda deleniti delectus et, laborum minima veritatis illo vitae adipisci.</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Payment review block</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12" style="max-width: 400px;">
+		<div class="plan-review" dkit-grid="col-12">
+			<div class="plan-review-row" dkit-grid="col-12">
+				<div class="plan-review-col" dkit-grid="col-6">
+					<p class="label">Votre forfait:</p>
+				</div>
+				<div class="plan-review-col right" dkit-grid="col-6">
+					<p class="label">Montant:</p>
+				</div>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<div class="plan-review-col" dkit-grid="col-6">
+					<p class="sub-title sm">INDIVIDU</p>
+				</div>
+				<div class="plan-review-col right" dkit-grid="col-6">
+					<p class="text">185.00$</p>
+				</div>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<div class="plan-review-col" dkit-grid="col-6">
+					<p class="text sm fat">Sous-total</p>
+				</div>
+				<div class="plan-review-col right" dkit-grid="col-6">
+					<p class="text sm">185.00$</p>
+				</div>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<div class="plan-review-col" dkit-grid="col-6">
+					<p class="text sm">TPS 5,00% :<br>(818617722 RT0001)</p>
+				</div>
+				<div class="plan-review-col right" dkit-grid="col-6">
+					<p class="text sm">15.00$</p>
+				</div>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<div class="plan-review-col" dkit-grid="col-6">
+					<p class="text sm">TVQ 9,975% :<br>(1222795814 TQ0001)</p>
+				</div>
+				<div class="plan-review-col right" dkit-grid="col-6">
+					<p class="text sm">15.00$</p>
+				</div>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<div class="plan-review-col" dkit-grid="col-6">
+					<p class="text sm fat m-t5">Total</p>
+				</div>
+				<div class="plan-review-col right" dkit-grid="col-6">
+					<p class="text">185.00$</p>
+				</div>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<a class="link sm">Changer de forfait</a>
+			</div>
+		</div>
+		<div class="plan-review m-t20" dkit-grid="col-12">
+			<div class="plan-review-row" dkit-grid="col-12">
+				<p class="label">Vos informations:</p>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<p class="text">Maxime Nadeau</p>
+				<p class="text">maxime@agencesudo.ca</p>
+				<p class="text">418 888-8888</p>
+				<p class="text">Sudo- agence numérique</p>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<a class="link sm">Modifier vos informations</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Payment review card block</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<div class="plan-review" dkit-grid="col-12">
+			<div class="plan-review-row" dkit-grid="col-12">
+				<p class="label">Vos informations de paiements:</p>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<p class="text up">Maxime Nadeau</p>
+				<p class="text up">VISA **** **** **** 1234</p>
+				<p class="text up">EXP : 09/2020</p>
+			</div>
+		</div>
+		<div class="plan-review m-t20" dkit-grid="col-12">
+			<div class="plan-review-row" dkit-grid="col-12">
+				<p class="label">Date de la transaction:</p>
+			</div>
+			<div class="plan-review-row" dkit-grid="col-12">
+				<p class="text up">09/03/2017</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Account creation block</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<form class="form">
+			<div class="field_row" dkit-grid="col-12">
+				<div class="field_group p-r7" dkit-grid="col-6">
+					<label>Votre prénom</label>
+					<div class="fix-iconinput right">
+						<span class="icon-uni36"></span>
+						<input type="text" placeholder="Votre prénom">
+					</div>
+				</div>
+				<div class="field_group p-l7" dkit-grid="col-6">
+					<label>Votre nom</label>
+					<div class="fix-iconinput right">
+						<span class="icon-uni36"></span>
+						<input type="text" placeholder="Votre prénom">
+					</div>
+				</div>
+			</div>
+			<div class="field_row m-t20" dkit-grid="col-12">
+				<div class="field_group p-r7" dkit-grid="col-6">
+					<label>Votre courriel</label>
+					<div class="fix-iconinput right">
+						<span class="icon-mail"></span>
+						<input type="text" placeholder="ex: nom@entreprise.ca">
+					</div>
+				</div>
+				<div class="field_group p-l7" dkit-grid="col-4">
+					<label>Téléphone</label><span class="m-l5 di text sm">(facultatif)</span>
+					<div class="fix-iconinput right">
+						<span class="icon-uni2C"></span>
+						<input type="text" placeholder="x (xxx) xxx-xxxx">
+					</div>
+				</div>
+			</div>
+			<div class="field_row m-t20" dkit-grid="col-12">
+				<div class="field_group p-r7" dkit-grid="col-6">
+					<label>Entreprise</label><span class="m-l5 di text sm">(facultatif)</span>
+					<div class="fix-iconinput right">
+						<span class="icon-uniE043"></span>
+						<input type="text" placeholder="Votre prénom">
+					</div>
+				</div>
+			</div>
+			<div class="field_row m-t20" dkit-grid="col-12">
+				<div class="field_group p-r7" dkit-grid="col-6">
+					<label>Créez votre mot de passe</label>
+					<div class="fix-iconinput right">
+						<span class="icon-uni3C"></span>
+						<input type="password" placeholder="Votre prénom">
+					</div>
+				</div>
+				<div class="field_group p-l7" dkit-grid="col-6">
+					<label>Confirmez votre mot de passe</label>
+					<div class="fix-iconinput right">
+						<span class="icon-uni3C"></span>
+						<input type="password" placeholder="Votre prénom">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-footer m-t30" dkit-grid="col-12">
+			
+				<div class="form-footer_left" dkit-grid="col-6">
+					<div class="plan-review" dkit-grid="col-12">
+						<div class="plan-review-row" dkit-grid="col-12">
+							<p class="label">Votre forfait:</p>
+							<p class="sub-title sm di">INDIVIDU</p>
+							<p class="text di">185.00$</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-footer_right ta-r" dkit-grid="col-6">
+					<a class="btn c-gray sm extra up m-r5">changer le forfait</a>
+					<a class="btn c-main sm extra up">Passez au paiement</a>
+				</div>
+				
+			</div>
+		</form>
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Payment block</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<form class="form">
+			<div class="field_row" dkit-grid="col-12">
+				<div class="field_group" dkit-grid="col-12">
+					<label>Nom sur la carte</label>
+					<div class="fix-iconinput right">
+						<span class="icon-uni36"></span>
+						<input type="text" placeholder="Votre prénom">
+					</div>
+				</div>
+			</div>
+			<div class="field_row m-t20" dkit-grid="col-12">
+				<div class="field_group p-r7" dkit-grid="col-8">
+					<label>Numéro de carte de crédit</label>
+					<div class="fix-iconinput right">
+<!--						<span class="icon-mail"></span>-->
+						<input type="text" placeholder="4242 4242 4242 4242">
+					</div>
+				</div>
+				<div class="field_group p-l7" dkit-grid="col-4">
+					<label>Vérification: </label><a class="link h-btn m-l5"><span class="icon-uni59"></span></a>
+					<div class="fix-iconinput right">
+						<span class="icon-uni3C"></span>
+						<input type="text" placeholder="Trois chiffres ...">
+					</div>
+				</div>
+			</div>
+			<div class="field_row m-t20" dkit-grid="col-12">
+				<label>Date d'expiration</label><br>
+				<div class="field_group p-r7" dkit-grid="col-2">
+					<input type="text" placeholder="MM">
+				</div>
+				<div class="field_group p-r7" dkit-grid="col-2">
+					<input type="text" placeholder="AA">
+				</div>
+			</div>
+			
+			
+			<div class="form-footer m-t30" dkit-grid="col-12">
+			
+				<div class="form-footer_left" dkit-grid="col-4">
+					<div class="plan-review" dkit-grid="col-12">
+						<p class="text sm m-t15">Paiement sécurisé par <a href="#" target="_blank">Stripe Ltd.</a></p>
+					</div>
+				</div>
+				
+				<div class="form-footer_right ta-r" dkit-grid="col-8">
+					<a class="btn c-main sm extra-lg up">Payez maintenant</a>
+				</div>
+				
+			</div>
+		</form>
+	</div>
+	
+	
+	<div class="p-l20 p-r20 m-t60" dkit-grid="col-12">
+		<h2 class="dkit-section-title">Login block</h2>
+		<hr class="dkit-section-hr">
+	</div>
+	
+	<div class="p-20" dkit-grid="col-12">
+		<form class="form">
+		
+			<div class="field_row" dkit-grid="col-12">
+				
+				<label>Votre courriel</label>
+				<div class="fix-iconinput right">
+					<span class="icon-mail"></span>
+					<input type="text" placeholder="ex: nom@entreprise.ca">
+				</div>
+			
+			</div>
+		
+			<div class="field_row m-t20" dkit-grid="col-12">
+				
+				<label>Votre mot de passe</label>
+				<div class="fix-iconinput right">
+					<span class="icon-uni3C"></span>
+					<input type="password" placeholder="Votre mot de passe">
+				</div>
+			
+			</div>
+			<div class="field_row m-t20 ta-r" dkit-grid="col-12">
+				<a class="link h-btn sm">Mot de passe oublié ? </a>
+			</div>
+			
+			<div class="form-footer m-t30" dkit-grid="col-12">
+			
+				<div class="form-footer_left" dkit-grid="col-12">
+					<a class="btn c-main sm extra block up"><span class="icon-uni3C va-t01"></span> Me connecter</a>
+				</div>
+
+			</div>
+		</form>
+	</div>
+	
+	
+	<div class="p-20 m-t20 p-b60" dkit-grid="col-12">
+		
+	</div>
+	
+
+</body>
+ 
+<script src="scripts/jquery-2.2.1.min.js"></script>
+<script src="scripts/devkit.min.js"></script>
+<script src="scripts/library.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+
+</html>

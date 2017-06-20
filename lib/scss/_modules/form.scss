@@ -1,0 +1,243 @@
+@mixin dkit-form($form-input_font){
+	
+	$form-input_font-size: 14px;
+	$form-input_font-weight: 400;
+	$form-input_font-color: gray;
+	$form-input_background-color: transparent;
+	$form-input_border-color: #d8d8d8;
+	$form-input_border-size: 1px;
+	$form-input_border-type: solid;
+	$form-input_border-radius: 4px;
+	$form-input_hover_hover-color: #2f2f2f;
+	$form-input_hover_border-color: #c6c6c6;
+	$form-input_focus_font-color: black;
+	$form-input_focus_border-color: #bfbfbf;
+	$form-input_ease: 'true'; // bool
+	$form-input_ease-speed: 200ms;
+	$form-input_padding: 10px;
+	$form-label_font: $form-input_font;
+	$form-label_font-color: black;
+	$form-label_font-size: 16px;
+	$form-label_font-weight: 700;
+	$form-label_margin-bottom: 6px;
+	$form-fieldset-padding: 12px;
+	$form-select_padding: 9px 50px 11px 10px;
+	$form-select_btn-color: gray;
+	$form-select_background-color: transparent;
+	$form-select_hover-btn-color: black;
+	$form-select_hover-background-color: transparent;
+	
+	$INRD: $form-input_border-radius;
+	$FSPD: $form-fieldset-padding / 2;
+	
+	[type="text"], [type="email"], [type="password"], [type="tel"], [type="number"], textarea{
+		font-family: $form-input_font;
+		font-size: $form-input_font-size;
+		color: $form-input_font-color;
+		background-color: $form-input_background-color;
+		border: $form-input_border-size $form-input_border-type $form-input_border-color;
+		width: 100%;
+		font-weight: $form-input_font-weight;
+		padding: $form-input_padding;
+		border-radius: $INRD $INRD $INRD $INRD;
+		-webkit-border-radius: $INRD $INRD $INRD $INRD;
+		-webkit-font-smoothing:antialiased;
+		
+		@if $form-input_ease == 'true'{
+			-webkit-transition: all $form-input_ease-speed ease-in-out;
+			-moz-transition: all $form-input_ease-speed ease-in-out;
+			-ms-transition: all $form-input_ease-speed ease-in-out;
+			-o-transition: all $form-input_ease-speed ease-in-out;
+			transition: all $form-input_ease-speed ease-in-out;
+		}
+		
+		&:focus{
+			@if $form-input_focus_border-color != 'same' { border-color: $form-input_focus_border-color }
+			@if $form-input_focus_font-color != 'same' { color: $form-input_focus_font-color }
+		}
+		
+		&:hover{
+			@if $form-input_focus_border-color != 'same' { border-color: $form-input_hover_border-color }
+			@if $form-input_focus_border-color != 'same' { color: $form-input_hover_hover-color }
+		}
+		
+		&:focus:hover{
+			@if $form-input_focus_border-color != 'same' { border-color: $form-input_focus_border-color }
+			@if $form-input_focus_font-color != 'same' { color: $form-input_focus_font-color }
+		}
+	}
+	
+	textarea{
+		resize: vertical;
+		height: 120px;
+	}
+	
+	label{
+		font-family: $form-label_font;
+		font-size: $form-label_font-size;
+		font-weight: $form-label_font-weight;
+		color: $form-label_font-color;
+		display: inline-block;
+		margin-bottom: $form-label_margin-bottom;
+		-webkit-font-smoothing:antialiased;
+	}
+	
+	small{
+		display: block;
+		color: gray;
+		@include line-height(20);
+	}
+	
+	input ~ small, textarea ~ small, select ~ small{
+		margin-top: 5px;
+	}
+	
+	fieldset{
+		padding: 12px 6px; 
+	}
+	
+	.fix-select{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		border: $form-input_border-size $form-input_border-type $form-input_border-color;
+		border-radius: $INRD $INRD $INRD $INRD;
+		-webkit-border-radius: $INRD $INRD $INRD $INRD;
+		overflow: hidden;
+		background-color: $form-input_background-color;
+		@if $form-input_ease == 'true'{
+			-webkit-transition: all $form-input_ease-speed ease-in-out;
+			-moz-transition: all $form-input_ease-speed ease-in-out;
+			-ms-transition: all $form-input_ease-speed ease-in-out;
+			-o-transition: all $form-input_ease-speed ease-in-out;
+			transition: all $form-input_ease-speed ease-in-out;
+		}
+
+		&:hover{
+			@if $form-input_focus_border-color != 'same' { border-color: $form-input_hover_border-color }
+			span {
+				@if $form-input_focus_border-color != 'same' { color: $form-input_hover_hover-color }
+				background-color: $form-select_hover-background-color;
+			}
+		}
+		
+		span{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			font-size: 10px;
+			background-color: gray;
+			display: inline-block;
+			padding: 13px 13px;
+			pointer-events: none;
+			color: $form-select_btn-color;
+			background-color: $form-select_background-color;
+			@if $form-input_ease == 'true'{
+				-webkit-transition: all $form-input_ease-speed ease-in-out;
+				-moz-transition: all $form-input_ease-speed ease-in-out;
+				-ms-transition: all $form-input_ease-speed ease-in-out;
+				-o-transition: all $form-input_ease-speed ease-in-out;
+				transition: all $form-input_ease-speed ease-in-out;
+			}
+		}
+		select{
+			font-family: $form-input_font;
+			font-size: $form-input_font-size;
+			color: $form-input_font-color;
+			border:none;
+			-moz-appearance:button;
+			-webkit-appearance:button;
+			-moz-border-radius:0;
+			-webkit-padding-end: 10px;
+			-webkit-padding-start: 10px;
+			-webkit-user-select: none;
+			padding: $form-select_padding;
+			background-position: center right;
+			background-repeat: no-repeat;
+			background: transparent;
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+
+			@if $form-input_ease == 'true'{
+				-webkit-transition: all $form-input_ease-speed ease-in-out;
+				-moz-transition: all $form-input_ease-speed ease-in-out;
+				-ms-transition: all $form-input_ease-speed ease-in-out;
+				-o-transition: all $form-input_ease-speed ease-in-out;
+				transition: all $form-input_ease-speed ease-in-out;
+			}
+
+			&:hover{
+				@if $form-input_focus_border-color != 'same' { border-color: $form-input_hover_border-color }
+				@if $form-input_focus_border-color != 'same' { color: $form-input_hover_hover-color }
+			}
+
+		}
+	}
+	
+	.fix-checkbox{		
+		label{
+			padding-left: 28px;
+    		text-indent: -28px;
+			cursor: pointer;
+		}
+		
+		[type="checkbox"]{
+			padding: 9px;
+			border-radius: 3px; 
+			-webkit-border-radius: 3px;
+			&:checked{
+				background-color: black;
+				border-color: black;
+			}
+			&:checked:after{
+				font-family: 'arial' !important;
+				content: '✓';
+				font-size: 14px;
+				position: absolute;
+				top: 0px;
+				left: 4px;
+				color: white;
+			}
+		}
+		
+		[type="checkbox"], [type="radio"]{
+			margin-left: -0px;
+			display: inline-block !important;
+			width: auto !important;
+			-webkit-appearance: none;
+			background-color: $form-input_background-color;
+			border: $form-input_border-size $form-input_border-type $form-input_border-color;
+			vertical-align: -0.8em;
+			margin-right: 8px;
+			position: relative;
+			*overflow: hidden;
+			cursor: pointer;
+		}
+		
+		[type="radio"]{
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			padding: 9px; 
+			position: relative;
+			&:checked{
+				background-color: black;
+				border-color: black;
+			}
+			&:checked:after{
+				font-family: 'arial' !important;
+				content: '\2022';
+				font-size: 37px !important;
+				position: absolute;
+				top: -11px;
+				left: 2.5px;
+				color: white;
+			}
+		}
+		
+		
+	}
+	
+	@content
+	
+}

@@ -1,0 +1,36 @@
+$col-txt: 		#363636;
+$col-txt_d: 	#9b9b9b;
+
+.cal{
+	
+	&-row{
+//		border-bottom: 1px solid black;
+//		border-left: 1px solid black;
+//		border-right: 1px solid black;
+	}
+	
+	&-cell{
+		width: 14.2857%;
+		float:left;
+		text-align: center;
+        box-sizing: border-box;
+//		border-right: 1px solid black;
+//		border-left: none;
+		&:last-of-type{
+//			border-right: none;
+		}
+	}
+	
+	&-cell-wrap{
+		padding: 20px;
+	}
+	
+	&-label{
+		@extend %font-med;
+		text-transform: uppercase;
+		color: $col-txt;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	
+}

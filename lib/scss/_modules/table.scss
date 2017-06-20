@@ -1,0 +1,145 @@
+
+@mixin dkit-table($table-input_font){
+	
+	// Breakpoints
+	$bp-smallest: 420px; 
+	$bp-small: 550px;
+	$bp-medium: 750px;
+	$bp-large: 900px;
+	$bp-largest: 1000px;
+	
+ 
+	// Styles
+	width: 100%;
+	font-family: $table-input_font;
+
+	@media (min-width: $bp-medium) {
+		font-size: 14px; 
+	}
+
+	thead {
+		position: absolute;
+		clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+		padding: 0;
+		border: 0;
+		height: 1px; 
+		width: 1px; 
+		overflow: hidden;
+
+		@media (min-width: $bp-medium) {
+			position: relative;
+			clip: auto;
+			height: auto;
+			width: auto;
+			overflow: auto;
+		}
+
+		th {
+			text-align: center;
+			&:first-of-type {
+				text-align: left; 
+			}
+		}
+	}
+
+	tbody, tr, th, td {
+		display: block;
+		padding: 0;
+		text-align: left;
+		white-space: normal;
+	}
+
+	tr {   
+		@media (min-width: $bp-medium) {
+		  display: table-row; 
+		}
+	}
+
+	th, td {
+		padding: 18px 8px;
+		border-bottom: 1px solid #eaeaea;
+		font-family: $table-input_font;
+		@media (min-width: $bp-medium) {
+		  display: table-cell;
+		}
+	}
+
+	caption {
+		font-weight: bold;
+		@include font-size(25);
+		@include line-height(36);
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	tfoot {
+		font-size: 14px;
+		font-style: italic;
+
+		@media (min-width: $bp-large) {
+		  font-size: .9em;
+		}
+	}
+
+	tbody {
+		@media (min-width: $bp-medium) {
+		  display: table-row-group; 
+		}
+
+		tr {
+			margin-bottom: 1em;
+	
+			@media (min-width: $bp-medium) { 
+				display: table-row;
+				border-width: 1px;
+			}
+
+			&:last-of-type {
+				margin-bottom: 0; 
+			}
+
+			&:nth-of-type(even) {
+				@media (min-width: $bp-medium) {
+					background-color: #f2f2f2;
+				}
+			}
+		}
+
+		th[scope="row"] {
+			@media (min-width: $bp-medium) {
+				background-color: transparent;
+				text-align: left;
+			}
+		}
+
+		td {
+			text-align: right;
+
+			@media (min-width: $bp-medium) {
+				text-align: center; 
+			}
+		}
+
+		td[data-type=currency] {
+			text-align: right; 
+		}
+
+		td[data-title]:before {
+			content: attr(data-title);
+			float: left;
+			font-size: .8em;
+			color: rgba(94,93,82,.75);
+
+			@media (min-width: $bp-small) {
+				font-size: .9em; 
+			}
+
+			@media (min-width: $bp-medium) {
+				content: none; 
+			}
+		} 
+	}
+	
+	@content;
+}

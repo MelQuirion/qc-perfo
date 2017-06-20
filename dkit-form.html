@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#"> <!--OPEN GRAPH PROTOCOL-->
+	
+    <!--ASSETS-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>       
+    <!--/ASSETS-->
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <link rel="stylesheet" href="patch/patch-above-fold.min.css?rel=046340b1f4">
+ 	<link rel="stylesheet" href="styles/styles.min.css"> 
+</head>
+<body>
+
+<div class="form" dkit-grid="col-12">
+	
+	<form class="example" dkit-grid="grid-wrapper" >
+		<fieldset dkit-grid="col-6">
+			<label>Test de label</label>
+			<input type="text" placeholder="Exemple de placeholder">
+		</fieldset>
+
+		<fieldset dkit-grid="col-6">
+			<label>Test de label</label>
+			<input type="text">
+		</fieldset>
+
+		<fieldset dkit-grid="col-12">
+			<label>Test de label</label>
+			<input type="email">
+			<small>Note de sous-formulaire</small>
+		</fieldset>
+
+		<fieldset dkit-grid="col-12">
+			<label>Test de label</label>
+			<div class="fix-select">
+				<div class="btn-dropdown">
+					<span class="icon-uniE008"></span>
+				</div>
+				<select>
+					<option>option 1</option>
+					<option>option 2</option>
+					<option>option 3</option>
+					<option>option 4</option>
+				</select>
+			</div>
+		</fieldset>
+
+		<fieldset dkit-grid="col-12">
+			<label>Zone de texte</label>
+			<textarea></textarea>
+		</fieldset>
+
+		<fieldset class="fix-checkbox">
+			<label><input type="checkbox" name="label1" id="name1" value="Bike">Nom de label 1 trop long qui tombe sur plusieurs lignes ohhh non</label><br>
+			<label><input type="checkbox" name="label1" id="name1" value="Bike">Nom de label 1 trop long qui tombe sur plusieurs lignes ohhh non</label><br>
+		</fieldset>
+
+		<fieldset class="fix-checkbox">
+			<label><input type="radio" name="label1" id="name1" value="Bike">Nom de label 1 trop long qui tombe sur plusieurs lignes ohhh non</label><br>
+		</fieldset>
+
+		<fieldset dkit-grid="col-12">
+			<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non, debitis animi, obcaecati dolore ipsa voluptatum repellendus quaerat dolor molestiae consectetur, eaque laudantium, dicta perferendis sint ea eveniet. Recusandae, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non, debitis animi, obcaecati dolore ipsa voluptatum repellendus quaerat dolor molestiae consectetur, eaque laudantium, dicta perferendis sint ea eveniet. Recusandae, molestias.</small>
+		</fieldset>
+		
+		<fieldset dkit-grid="col-12">
+			<input type="file">
+		</fieldset>
+		
+		<fieldset dkit-grid="col-12">
+			<input type="submit">
+		</fieldset>
+		
+	</form>
+</div>
+		
+
+
+
+</body>
+ 
+<script src="scripts/jquery-2.2.1.min.js"></script>
+<script src="scripts/devkit.min.js"></script>
+<script src="scripts/library.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,600,700" rel="stylesheet">
+
+</html>
+
+
+<script>
+	FIXHEIGHT.init();
+	LIGHTBOX.init();
+
+</script>

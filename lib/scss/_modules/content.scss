@@ -1,0 +1,163 @@
+@mixin dkit-content($form-input_font){
+	
+	@include font-smooth;
+	
+	@for $i from 1 through 6 {
+		h#{$i} { 			
+			text-transform: none;
+			color: black;
+			margin-bottom: 6px;
+			margin-top: 40px;
+			padding-bottom: 0px;
+			letter-spacing: 0px;
+			font-weight: normal;
+			font-family: $form-input_font;
+			font-weight: 700;
+			@include font-size(32 - $i*3.5);
+			@include line-height(42 - $i*3.5);
+		}
+	}
+
+	p + p, ol + p, ul + p {
+		margin-top: 25px;
+	} 
+
+	b, strong, u{
+		font-family: inherit;
+	}
+
+	hr{
+		margin-top: 25px;
+		color: black;
+	}
+
+	p{
+		font-family: $form-input_font;
+		@include font-size(18);
+		@include line-height(32);
+		color: black;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		@include respond-to(550px){
+			@include font-size(16);
+			@include line-height(26);
+		}
+	}
+
+	i, em{
+		font-style: italic;
+	}
+
+	a{
+		font-family: inherit; 
+		text-decoration: none;
+		color: blue;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	li{
+		list-style:disc;
+		margin-left: 36px;
+		margin-bottom: 2px;
+		padding-bottom: 0px;
+		font-family: $form-input_font;
+		@include font-size(18);
+		@include line-height(30);
+		color: black;
+		@include respond-to(550px){
+			@include font-size(16);
+			@include line-height(26);
+		}
+	}
+	
+	ol{
+		margin-left: -18px;
+		counter-reset: item;
+		li{
+			list-style: none;
+		}
+		li:before{
+			content: counters(item, ".") "- "; 
+			counter-increment: item;
+		}
+		li::marker{
+			font-weight: 700;
+		}
+		ol{
+			margin-left: 18px;
+		}
+	}
+		
+	ul > ul{
+		margin-left: 18px;
+		li{ list-style: circle};
+	}
+	
+	ul > ul > ul{
+		margin-left: 18px;
+		li{ list-style:square};
+	}
+	
+	mark{
+		background-color: #e6f2fd;
+		padding: 2px 4px;
+	}
+	
+	small{
+		opacity: 0.6;
+		font-family: inherit;
+	}
+	
+	blockquote{
+		margin-top: 25px;
+		padding-left: 18px;
+		border-left: 3px solid #dbdbdb;
+	}
+	
+	hr{
+		border: 0;
+    	height: 0;
+    	border-top: 1px solid rgba(0, 0, 0, 0.1);
+    	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+	
+	hr.gradient{
+		height: 12px;
+    	border: 0;
+    	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+	
+	hr.progressive{
+		border: 0;
+    	height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+	}
+	
+	hr.dashed{
+		border: 0;
+   		border-bottom: 1px dashed #ffffff;
+    	background: #c4c4c4;
+	}
+	
+	hr.glyphed {
+		padding: 0;
+		border: none;
+		border-top: medium double #c4c4c4;
+		color: #c4c4c4;
+		text-align: center;
+		&:after{
+			content: "§";
+			display: inline-block;
+			position: relative;
+			top: -0.6em;
+			font-size: 1em;
+			padding: 0 0.25em;
+			background: white;
+		}
+	}
+
+@content
+
+}	

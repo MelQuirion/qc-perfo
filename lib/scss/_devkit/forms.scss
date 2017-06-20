@@ -1,0 +1,429 @@
+/*
+	This document contains all the form styles
+*/
+
+// CHANGE DOCUMENT COLORS IF NEEDED
+$main-color: 				$col-main;
+$main-color_light: 			$col-main_l;
+$text-color: 				$col-text_l;
+$text-color_hover:			$col-text;
+$text-color_light:			$col-text_xl;
+$outline-color: 			$col-ol;
+$outline-color_hover: 		$col-ol_h;
+$background-color:			$col-bg_l;
+$background-color_light:	$col-bg_xl;
+$warn-color:				#F44336; 
+$warn-color_hover:			#D32F2F;
+$alert-color:				#FF9800;
+$alert-color_hover:			#F57C00;
+$done-color:				#4CAF50;
+$done-color_hover:			#388E3C;
+$gray-color: 				#F5F5F5;
+$gray-color_hover: 			#EEEEEE;
+
+
+.form{
+	position: relative;
+	
+	[type="text"], [type="email"], [type="password"], [type="tel"], [type="number"], textarea{
+		@extend %font-reg;
+		font-size: 14px;
+		color: $text-color;
+		background-color: white;
+		border: 1px solid $outline-color;
+		width: 100%;
+		padding: 16px;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		@include ease-in-out(200ms);
+		
+		&:focus{
+			border-color: $main-color_light;
+		}
+		
+		&:hover{
+			border-color: $outline-color_hover;
+		}
+		
+		&:focus:hover{
+			border-color: $main-color_light;
+		}
+		
+		&.sm{
+			padding: 10px;
+		}
+		
+		&.warn{ border-color: $warn-color }
+		&.alert{ border-color: $alert-color }
+	}
+	
+	textarea{
+		resize: vertical;
+		height: 80px;
+		
+		&.warn{ border-color: $warn-color }
+		&.alert{ border-color: $alert-color }
+	}
+	
+	label{
+		@extend %font-bold;
+		font-size: 14px;
+		color: $text-color;
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+	
+	small{
+		display: block;
+		color: gray;
+		@extend %font-reg;
+		font-size: 12px;
+	}
+	
+	input ~ small, textarea ~ small, select ~ small{
+		margin-top: 5px;
+	}
+	
+	fieldset{
+		padding: 12px 6px; 
+	}
+	
+	.fix-select{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		border: 2px solid $outline-color;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		overflow: hidden;
+		background-color: $background-color_light;
+
+		&:hover{
+			border-color: $outline-color_hover;
+		}
+		
+		&.warn{ border-color: $warn-color }
+		&.alert{ border-color: $alert-color }
+		
+		span{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			font-size: 10px;
+			background-color: gray;
+			display: inline-block;
+			padding: 19px 19px;
+			pointer-events: none;
+			color: $text-color;
+			background-color: transparent;
+			border-left: 2px solid $outline-color;
+			@include ease-in-out(200ms);
+		}
+		
+		select{
+			@extend %font-reg;
+			font-size: 14px;
+			color: $text-color;
+			border:none;
+			-moz-appearance:button;
+			-webkit-appearance:button;
+			-moz-border-radius:0;
+			-webkit-padding-end: 10px;
+			-webkit-padding-start: 10px;
+			-webkit-user-select: none;
+			padding: 16px;
+			background-position: center right;
+			background-repeat: no-repeat;
+			background: transparent;
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+			@include ease-in-out(200ms);
+		}
+	}
+	
+	.fix-checkbox{		
+		label{
+			padding-left: 28px;
+    		text-indent: -30px;
+			cursor: pointer;
+		}
+		
+		.match-checkbox{
+			padding-left: 28px;
+			margin-top: -5px;
+			
+		}
+		
+		[type="checkbox"]{
+			padding: 9px;
+			border-radius: 6px; 
+			-webkit-border-radius: 6px;
+			&:hover{
+				background-color: white;
+				border-color: $outline-color_hover;
+			}
+			&:checked{
+				background-color: white;
+				border-color: $main-color;
+			}
+			&:hover:after{
+				font-family: 'arial' !important;
+				content: '✓';
+				font-size: 14px;
+				position: absolute;
+				top: 0px;
+				left: 4px;
+				color: $outline-color_hover;
+			}
+			&:checked:after{
+				font-family: 'arial' !important;
+				content: '✓';
+				font-size: 14px;
+				position: absolute;
+				top: 0px;
+				left: 4px;
+				color: $main-color;
+			}
+		}
+		
+		[type="checkbox"], [type="radio"]{
+			margin-left: -0px;
+			display: inline-block !important;
+			width: auto !important;
+			-webkit-appearance: none;
+			background-color: $background-color_light;
+			border: 2px solid $outline-color;
+			vertical-align: -0.8em;
+			margin-right: 8px;
+			position: relative;
+			*overflow: hidden;
+			cursor: pointer;
+			
+			&.warn{ border-color: $warn-color }
+			&.alert{ border-color: $alert-color }
+			
+		}
+		
+		[type="radio"]{
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			padding: 9px; 
+			position: relative;
+			&:hover{
+				background-color: white;
+				border-color: $outline-color_hover;
+			}
+			&:checked{
+				background-color: white;
+				border-color: $main-color;
+			}
+			&:hover:after{
+				font-family: 'arial' !important;
+				content: '\2022';
+				font-size: 37px !important;
+				position: absolute;
+				top: -11px;
+				left: 2.5px;
+				color: $outline-color_hover;
+			}
+			&:checked:after{
+				font-family: 'arial' !important;
+				content: '\2022';
+				font-size: 37px !important;
+				position: absolute;
+				top: -11px;
+				left: 2.5px;
+				color: $main-color;
+			}
+		}
+	
+	}
+	
+	.fix-numbox{
+		position: relative;
+		min-width: 150px;
+		display: inline-block;
+		input{
+			text-align: center;
+			&:focus{
+				border-color: $outline-color_hover !important;
+			}
+		}
+		
+		&:hover > .fix-numbox-minus, &:hover > .fix-numbox-plus{
+			border-color: $outline-color_hover;
+		}
+		
+		
+		
+		&-minus, &-plus{
+			position: absolute;
+			color: $main-color;
+			padding: 16px;
+			cursor: pointer;
+			font-size: 12px;
+			background-color: $background-color_light;
+			border: 2px solid $outline-color;
+			@include ease-in-out(200ms);
+			&.warn{ border-color: $warn-color }
+			&.alert{ border-color: $alert-color }
+			
+			&:hover{
+				background-color: white;
+			}
+			&.left{
+				top: 0px;
+				left: 0px;
+				border-radius: 6px 0px 0px 6px;
+			}
+			&.right{
+				top: 0px;
+				right: 0px;
+				border-radius: 0px 6px 6px 0px;
+			}
+		}
+		
+		
+		
+		input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0; 
+		}
+	}
+	
+	.fix-boxselect{
+		cursor: pointer;
+		border: 2px solid $outline-color;
+		background-color: $background-color_light;
+		padding: 20px;
+		border-radius: 6px;
+		position: relative;
+		&.warn{ border-color: $warn-color }
+		&.alert{ border-color: $alert-color }
+		
+		&:hover{
+			background-color: white;
+		}
+		
+		&:after{ 
+			font-family: 'Fabricones' !important;
+			content: '';
+			font-size: 14px;
+			position: absolute;
+			top: -12px;
+			border: 3px solid white;
+			right: 10px;
+			background-color: white;
+			border-radius: 100%;
+			color: $outline-color_hover;
+			opacity: 0;
+		}
+		&:hover:after{
+			opacity: 1;
+		}
+		&.selected{
+			background-color: white;
+			border-color: $main-color;
+			&:after{
+				color: $main-color;
+				opacity: 1;
+			}
+		}
+		
+		// Styles used to display text on the right (see payment module)
+		
+		.right{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+		
+		&.slim{
+			padding: 15px;
+			.right{
+				top: 15px;
+			}
+		}
+	}
+	
+	.fix-iconinput{
+		position: relative;
+		input{
+			padding-left: 42px;
+		}
+		span{
+			position: absolute;
+			left: 19px;
+			top: 19px;
+			font-size: 14px;
+			color: $text-color_light;
+		}
+		&.right span{
+			position: absolute;
+			left: auto;
+			right: 19px;
+			top: 19px;
+			font-size: 14px;
+			color: $text-color_light;
+		}
+		&.right input{
+			padding-right: 42px;
+			padding-left: 20px !important;
+		}
+	}
+	
+	.fix-groupselect{
+		
+		&-node{
+			position: relative;
+			border: 1px solid $outline-color;
+			border-top: none;
+			padding: 10px 15px;
+			cursor: pointer;
+			&:hover{
+				background-color: $background-color_light;
+			}
+		}
+		
+		&-node:first-of-type{
+			border-radius: 6px 6px 0px 0px;
+			border-top: 1px solid $outline-color;
+		}
+		
+		&-node:last-of-type{
+			border-radius: 0px 0px 6px 6px;
+		}
+		
+		&-node.active{
+			background-color: $main-color;
+			border-color: $main-color;
+		}
+		
+		&-node.active{
+			span, p { color: white }
+		}
+		
+		&-node.active .pointer{
+			display: block;
+		}
+		
+		.pointer{
+			display: none;
+			position: absolute;
+			right: -5px;
+			top: 17px;
+			width: 10px;
+			height: 10px;
+			-webkit-transform: rotate(45deg); 
+   	 		-moz-transform: rotate(45deg);  
+   			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); /*for IE*/
+			background-color: $main-color;
+		}	
+	}
+}
+
+.user-details{
+	margin-top: -10px;
+	opacity: 0;
+}

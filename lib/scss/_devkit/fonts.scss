@@ -1,0 +1,265 @@
+/*
+	This document contains all font styles
+*/
+
+
+%font-reg{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400 !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+%font-bold{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700 !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+%font-display{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700 !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Project fonts
+
+.title{
+	@extend %font-display;
+	color: $col-text;
+	font-size: 30px;
+	line-height: 38px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	
+	&.lg{
+		font-size: 42px;
+		line-height: 52px;
+	}
+	
+	&.med{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	
+	&.sm{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	
+	&.thin{
+		letter-spacing: 0px;
+		@extend %font-reg;
+	}
+
+	&.light{
+		font-weight: 400 !important;
+
+		strong {
+			@extend %font-display;
+		}
+	}
+	
+	&.c-white{ color: white }
+	&.c-main{ color: $col-main }
+}
+
+.sub-title{
+	@extend %font-bold;
+	color: $col-text_l;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	&.med{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	
+	&.sm{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	&.c-white{ color: white }
+}
+
+.label{
+	@extend %font-bold;
+	color: $col-text_l; 
+	font-size: 16px;
+	line-height: 24px;
+	
+	&.lg{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	
+	&.med{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	
+	&.sm{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	
+	&.c-white{ color: white }
+}
+
+.text{
+	@extend %font-reg;
+	color: $col-text_l;
+	font-size: 16px;
+	line-height: 24px;
+	
+	// Sizes
+	&.big{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	&.med{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	
+	&.sm{
+		font-size: 12px;
+		line-height: 14px;
+	}
+	
+	&.xsm{
+		font-size: 10px;
+		line-height: 18px;
+	}
+	
+	
+	// Styles
+	
+	&.fat, .fat{
+		@extend %font-bold;
+	}
+	
+	
+	// Selectors
+	
+	strong, b{
+		@extend %font-bold;
+	}
+	
+	em, i{
+		@extend %font-reg;
+		font-style: italic;
+	}
+	
+	u{
+		font-family: inherit;
+	}
+	
+	a{
+		color: $col-main;
+		text-decoration: none;
+		font-family: inherit;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	
+	mark{
+		background-color: $col-main_l;
+		padding: 3px 5px 3px 5px;
+		border-radius: 3px;
+	}
+	
+	[class^="c-"]{
+		font-family: inherit;
+	}
+	
+	.c-alert{ color: $col-alert }
+	.c-warn{ color: $col-warn }
+	.c-done{ color: $col-done }
+	&.c-white{ color: white }
+	&.c-gray_d{ color: $col-gray_d }
+	&.c-gray{ color: $col-gray }
+	
+}
+ 
+.tag{
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 6px;
+	font-size: 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	@extend %font-bold;
+	color: white;
+	span{
+		vertical-align: 0.15em;
+	}
+	
+	&.c-main{
+		background-color: $col-main;
+	}
+	
+	&.c-main_ol{
+		background-color: transparent;
+		color: $col-main;
+		border: 1px solid $col-main;
+	}
+	
+	&.t-main{
+		color: $col-main;
+	}
+
+	&.big {
+		font-size: 10px;
+	}
+
+	&.c-white {
+		color: white;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+// Devkit specific fonts:
+
+.dkit-section-title{
+	@extend %font-bold;
+	color: gray;
+	font-size: 16px;
+	&.lg{
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+.dkit-section-hr{
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d1d1d1;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.dkit-section-link{
+	@extend %font-reg;
+	color: $col-main;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.dkit-section-note{
+	@extend %font-reg;
+	color: #4d4d4d;
+	display: block;
+	font-size: 12px;
+}

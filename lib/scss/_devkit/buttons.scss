@@ -1,0 +1,550 @@
+/*
+	This document contains all the button styles
+*/
+
+
+// CHANGE DOCUMENT COLORS IF NEEDED
+
+$col-btn: 		$col-main;
+$col-btn_h: 	$col-main_h;
+
+
+.link{
+	display: inline-block;
+	cursor: pointer;
+	color: $col-btn;
+	text-decoration: none;
+	@extend %font-bold;
+	font-size: inherit;
+	line-height: inherit;
+	&:hover{
+		color: $col-btn_h;
+		text-decoration: underline;
+	}
+	
+	
+	// Sizes: ---------------------/
+	
+	&.xlg{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	&.lg{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	
+	&.med{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	&.sm{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	
+	&.xsm{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	
+	&.xxsm{
+		font-size: 11px;
+		line-height: 19px;
+	}
+	
+	
+	// Flavors: ---------------------/
+	
+	&.c-main{
+		color: $col-main;
+		&:hover{
+			color: $col-main_h;
+		}
+	}
+	
+	&.c-done{
+		color: $col-done;
+		&:hover{
+			color: $col-done_h;
+		}
+	}
+
+	&.c-warn{
+		color: $col-warn;
+		&:hover{
+			color: $col-warn_h;
+		}
+	}
+
+	&.c-alert{
+		color: $col-alert;
+		&:hover{
+			color: $col-alert_h;
+		}
+	}
+	
+	&.c-white{
+		color: white;
+	}
+	
+	// Types: ---------------------/
+	
+	&.drop{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	
+	&.h-btn:hover{
+		text-decoration: none;
+		color: $col-main_h;
+	}
+	
+	&.ls{
+		letter-spacing: 1px;
+	}
+
+	&.db {
+		display: block;
+	}
+	
+}
+
+.btn{
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px 16px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	background-color: $col-btn;
+	color: white;
+	border-radius: 6px;
+	@extend %font-display;
+	font-size: 14px;
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+	-khtml-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
+	&:hover{
+		background-color: $col-btn_h;
+	}
+	
+	// States: ---------------------/
+	&.disabled{
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+	
+	
+	// Font-styles: ---------------------/
+	
+	&.up{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	
+	&.fat{
+		@extend %font-bold;
+	}
+	
+	&.thin{
+		@extend %font-reg;
+	}
+	
+	&.ls{
+		letter-spacing: 2px;
+	}
+	
+	
+	// Shapes ---------------------/
+	
+	&.block{
+		width: 100%;
+		text-align: center;
+	}
+	
+	&.square{
+		border-radius: 0px;
+		padding: 15px;
+	}
+	
+	&.round{
+		border-radius: 100%;
+		padding: 15px;
+	}
+	
+	&.perfect-32{
+		height: 32px;
+		width: 32px;
+		padding: 0px !important;
+		line-height: 30px;
+		font-size: 12px;
+		vertical-align: middle; 
+		text-align: center;
+	}
+	
+	&.perfect-42{
+		height: 42px;
+		width: 42px;
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 14px;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	&.perfect-48{
+		font-size: 16px;
+		height: 48px;
+		width: 48px;
+		padding: 0px !important;
+		line-height: 46px;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	
+	// Sizes: ---------------------/
+	
+	&.xlg{
+		padding: 18px 28px;
+		font-size: 18px;
+		&.square, &.round{ padding: 25px }
+		&-extra{
+			padding: 18px 34px;
+		}
+	}
+	
+	&.lg{
+		padding: 15px 24px;
+		font-size: 16px;
+		&.square, &.round{ padding: 20px }
+		&-extra{
+			padding: 15px 32px;
+		}
+	}
+	
+	&.med{
+		padding: 14px 18px;
+		font-size: 14px;
+		&.square, &.round{ padding: 18px }
+		&-extra{
+			padding: 14px 28px;
+		}
+	}
+	
+	&.sm{
+		padding: 8px 13px;
+		font-size: 11px;
+		&.square, &.round{ padding: 10px }
+		&.extra{
+			padding: 14px 26px;
+		}
+		&.extra-lg{
+			padding: 14px 40px;
+		}
+	}
+	
+	&.xsm{
+		padding: 6px 12px;
+		font-size: 11px;
+		&.square, &.round{ padding: 8px }
+		&-extra{
+			padding: 6px 24px;
+		}
+	}
+	
+	&.xxsm{
+		padding: 6px 12px;
+		font-size: 11px;
+		&.square, &.round{ padding: 6px }
+		&-extra{
+			padding: 6px 22px;
+		}
+	}
+	
+	
+	// Flavors: ---------------------/
+	
+	&.ol{
+		background-color: transparent;
+		border-color: $col-btn;
+		color: $col-btn;
+		&:hover{
+			color: $col-btn_h;
+			border-color: $col-btn_h;
+		}
+		&.active{
+			background-color: $col-btn;
+			color: white;
+		}
+	}
+	
+	&.c-main{
+		background-color: $col-main;
+		color: white;
+		&:hover{
+			background-color: $col-main_h;
+		}
+	}
+	
+	&.c-main_ol{
+		background-color: transparent;
+		border-color: $col-main;
+		color: $col-main;
+		&:hover{
+			color: $col-main_h;
+			border-color: $col-main_h;
+		}
+		&.active{
+			background-color: $col-main;
+			color: white;
+		}
+	}
+	
+	&.c-done{
+		background-color: $col-done;
+		color: white;
+		&:hover{
+			background-color: $col-done_h;
+		}
+	}
+	
+	&.c-done_ol{
+		background-color: transparent;
+		border-color: $col-done;
+		color: $col-done;
+		&:hover{
+			color: $col-done_h;
+			border-color: $col-done_h;
+		}
+		&.active{
+			background-color: $col-done;
+			color: white;
+		}
+	}
+	
+	&.c-warn{
+		background-color: $col-warn;
+		color: white;
+		&:hover{
+			background-color: $col-warn_h;
+		}
+	}
+	
+	&.c-warn_ol{
+		background-color: transparent;
+		border-color: $col-warn;
+		color: $col-warn;
+		&:hover{
+			color: $col-warn_h;
+			border-color: $col-warn_h;
+		}
+		&.active{
+			background-color: $col-warn;
+			color: white;
+		}
+	}
+	
+	&.c-alert{
+		background-color: $col-alert;
+		color: white;
+		&:hover{
+			background-color: $col-alert_h;
+		}
+	}
+	
+	&.c-alert_ol{
+		background-color: transparent;
+		border-color: $col-alert;
+		color: $col-alert;
+		&:hover{
+			color: $col-alert_h;
+			border-color: $col-alert_h;
+		}
+		&.active{
+			background-color: $col-alert;
+			color: white;
+		}
+	}
+	
+	&.c-white{
+		background-color: white;
+		color: $col-bg_dark;
+		&:hover{
+			color: $col-btn_h;
+		}
+	}
+	
+	&.c-white_ol{
+		background-color: transparent;
+		border-color: white;
+		color: white;
+		&:hover{
+			color: $col-btn_h;
+			border-color: $col-btn_h;
+		}
+		&.active{
+			background-color: white;
+			color: $col-btn;
+		}
+	}
+	
+	&.c-gray{
+		background-color: $col-gray;
+		color: white;
+		&:hover{
+			background-color: $col-gray_h;
+		}
+	}
+	
+	&.c-gray_d{
+		background-color: $col-gray_d;
+		color: white;
+		&:hover{
+			background-color: $col-gray_dh;
+		}
+	}
+	
+	&.c-gray_ol{
+		background-color: transparent;
+		border-color: $col-gray;
+		color: $col-gray;
+		&:hover{
+			color: $col-gray_h;
+			border-color: $col-gray_h;
+		}
+		&.active{
+			background-color: $col-gray;
+			color: white;
+		}
+	}
+
+	&.border_big{
+		border-width: 3px;
+	}
+	
+	
+	// Arrangements: ---------------------/
+	&-group{ 
+		li{
+			display: inline-block;
+			border: none;
+			margin-left: -1px; 
+			&:first-of-type{
+				margin-left: 0px;
+			}
+		}
+		
+		li a{
+			border-radius: 0px;
+		}
+		
+		li a:hover{
+			z-index: 1;
+			position: relative;
+		}
+		
+		li:first-of-type a{
+			border-radius: 3px 0px 0px 3px;
+			border: 1px solid;
+		}
+		
+		li:last-of-type a{
+			border-radius: 0px 3px 3px 0px;
+			border: 1px solid;
+		}
+		
+	}
+	
+	&-group.tabs{ 
+		border-bottom: 1px solid $col-btn;
+		width: 100%;
+		display: block;
+		
+		li a{
+			margin-bottom: -1px;
+		}
+		
+		li:first-of-type a{
+			border-bottom-left-radius: 0px;
+		}
+		
+		li:last-of-type a{
+			border-bottom-right-radius: 0px;
+		}
+		
+		// State
+		a.tab-active{
+			border-bottom: 1px solid white;
+		}
+		
+		// Border Colors
+		&.c-main{ border-color: $col-main }
+		&.c-warn{ border-color: $col-warn }
+		&.c-alert{ border-color: $col-alert }
+		&.c-done{ border-color: $col-done }
+	}
+	
+	
+	
+}
+
+.dropdown{
+	display: inline-block;
+	position: relative;
+
+	&-list{
+		display: none;
+		position: absolute;
+		border-radius: 6px;
+		overflow: hidden;
+		background-color: $col-btn;
+		margin-top: 5px;
+	}
+	
+	&-list a{
+		padding: 8px 10px; 
+		width: 100%;
+		color: white;
+	}
+	
+	&-list a:hover{
+		color: white;
+		text-decoration: none;
+		background-color: $col-btn_h;
+	}
+	
+	
+	// Position ----------------------------/
+	
+	&-list.right{
+		right: 0;
+	}
+	
+	// Height ------------------------------/
+	
+	&-list.crop{
+		overflow-y: scroll;
+		max-height: 200px;
+	}
+	
+	
+	// Colors ----------------------------/
+	
+	&-list.c-main{
+		background-color: $col-main;
+		a{
+			color: white;
+		}
+		a:hover{
+			text-decoration: none;
+			background-color: $col-main_h;
+		}
+	}
+}

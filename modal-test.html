@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#"> <!--OPEN GRAPH PROTOCOL-->
+	
+    <!--ASSETS-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>       
+    <!--/ASSETS-->
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+ 	<link rel="stylesheet" href="styles/styles.min.css"> 
+</head>
+<body>
+
+	<a class="btn c-main med action-open-signup">Ouvrir modal</a><br><br>
+	<a class="btn c-main med action-open-new_order">Ouvrir modal pour acheter nouveau</a><br><br>
+	<a class="btn c-main med action-open-login">Ouvrir pour login</a><br><br>
+	<a class="btn c-main med action-open-infos">Ouvrir pour changer infos</a><br><br>
+	<a class="btn c-main med action-open-password">Ouvrir pour changer mot de passe</a><br><br>
+
+
+</body>
+ 
+<script src="scripts/jquery-2.2.1.min.js"></script>
+<script src="scripts/devkit.min.js"></script>
+<script src="scripts/library.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script>OrderModalController.init(Stripe)</script>
+</html>
